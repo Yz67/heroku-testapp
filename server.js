@@ -12,6 +12,6 @@ app.get('/', function (req, res) {
     res.render('home');
 });
 
-app.listen(process.env.PORT, function () {
+app.listen(process.env.PORT || 3000, function () {
     console.log('express-handlebars example server listening on: 3000');
 });
